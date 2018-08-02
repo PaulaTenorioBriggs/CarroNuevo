@@ -10,7 +10,7 @@
             android:title="Usuario" />
         <item
             android:id="@+id/nav_carrito"
-            android:icon="@drawable/ico_bebidas"
+            android:icon="@drawable/ico_perfume"
             android:title="Carrito" />
         <item
             android:id="@+id/nav_producto"

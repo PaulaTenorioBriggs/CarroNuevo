@@ -1,6 +1,6 @@
 package com.example.perfume.CarroPefume;
 
-import android.support.annotation.NonNull;
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
-import  com.example.perfume.CarroPefume.AdaptadorProducto;
+import com.example.perfume.CarroPefume.Producto;
+import com.example.perfume.CarroPefume.R;
 
 
 
@@ -30,7 +31,12 @@ public class AdaptadorProducto  extends RecyclerView.Adapter<AdaptadorProducto.V
             imagen = (ImageView) v.findViewById(R.id.producto_perfume);
         }
     }
-
+    public AdaptadorProducto() {
+    }
+    @Override
+    public int getItemCount() {
+        return Producto.CatalogoPerfume.size();
+    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
@@ -52,10 +58,6 @@ public class AdaptadorProducto  extends RecyclerView.Adapter<AdaptadorProducto.V
 
     }
 
-    @Override
-    public int getItemCount() {
-        return 0;
-    }
 
 }
 

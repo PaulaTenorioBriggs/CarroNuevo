@@ -50,7 +50,13 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setItemIconTintList(null);
+
+
+
+
+
     }
+
 
     @Override
     public void onBackPressed() {
@@ -92,6 +98,7 @@ public class MainActivity extends AppCompatActivity
 
         FragmentManager fragmentManager=getSupportFragmentManager();
 
+
         if (id == R.id.nav_usuario) {
 
             fragmentManager.beginTransaction().replace(R.id.contenedor, new Fragment_Usuario()).commit();
@@ -107,4 +114,7 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
 }
