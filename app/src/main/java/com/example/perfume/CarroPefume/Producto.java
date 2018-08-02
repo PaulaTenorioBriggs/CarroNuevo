@@ -1,63 +1,53 @@
 package com.example.perfume.CarroPefume;
 import java.util.ArrayList;
 import java.util.List;
-
-
+import  com.example.perfume.CarroPefume.R;
+import com.example.perfume.CarroPefume.Fragment_Producto;
+import  com.example.perfume.CarroPefume.Producto;
 
 public class Producto {
-    private String id_producto;
-    private String producto;
-    private String  imagenPath;
+
+    private String productos;
     private String precio;
+    private int idDrawable;
 
-    public Producto(String id_producto, String producto, String imagenPath, String precio) {
-        this.id_producto = id_producto;
-        this.producto = producto;
-        this.imagenPath = imagenPath;
+
+    public Producto(int id_producto, String productos, String precio, int idDrawable) {
+
+        this.productos = productos;
         this.precio = precio;
+        this.idDrawable = idDrawable;
+    }
+
+    public static final List<Producto> CatalogoPerfume = new ArrayList<Producto>();
+
+
+ static {
+       CatalogoPerfume.add(new Producto (1,"angel","30",R.drawable.angel));
+        CatalogoPerfume.add(new Producto(3, "angelOnly","20", R.drawable.angelOnly));
+        CatalogoPerfume.add(new Producto(1, "beyond",  "30", R.drawable.beyond));
+        CatalogoPerfume.add(new Producto(67, "bom",  "50", R.drawable.bom));
 
 
     }
 
-    public static final List<Producto> Perfumes = new ArrayList<Producto>();
-    public static final List<Producto>  Victoriaecret = new ArrayList<>();
 
-
-
-
-
-
-
-
-    public String getId_producto() {
-        return id_producto;
+    public String getProductos() {
+        return productos;
     }
 
-    public void setId_producto(String id_producto) {
-        this.id_producto = id_producto;
-    }
 
-    public String getProducto() {
-        return producto;
-    }
-
-    public void setProducto(String producto) {
-        this.producto = producto;
-    }
-
-    public String getImagenPath() {
-        return imagenPath;
-    }
-
-    public void setImagenPath(String imagenPath) {
-        this.imagenPath = imagenPath;
-    }
 
     public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
-        this.precio = precio;
+
+
+    public int getIdDrawable() {
+        return idDrawable;
     }
+
+
 }
+
