@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.centro2.Carro.Fragment_Usuario">
+    tools:context="com.example.perfume.CarroPerfume.Fragment_Usuario">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.perfume.CarroPefume.R;
+
 
 
 public class Fragment_Usuario extends Fragment {
