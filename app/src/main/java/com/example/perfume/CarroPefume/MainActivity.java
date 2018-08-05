@@ -20,11 +20,6 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,13 +97,25 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_usuario) {
 
             fragmentManager.beginTransaction().replace(R.id.contenedor, new Fragment_Usuario()).commit();
-        } else if (id == R.id.nav_producto) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor, new Fragment_Producto()).commit();
-        } else if (id == R.id.nav_carrito) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor, new Fragment_Carrito()).commit();
-        }  {
-
         }
+
+        else if (id == R.id.nav_producto) {
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new Fragment_Producto()).commit();
+        }
+
+        else if (id == R.id.nav_carrito) {
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new Fragment_Carrito()).commit();
+        }
+
+        else if (id == R.id.nav_foto) {
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new foto()).commit();
+        }
+
+        else if (id == R.id.nav_factura) {
+            fragmentManager.beginTransaction().replace(R.id.contenedor, new Fragment_factura()).commit();
+        }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

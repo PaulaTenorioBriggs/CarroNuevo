@@ -17,6 +17,16 @@
             android:icon="@drawable/icon_carrito"
             android:title="Producto" />
 
+        <item
+            android:id="@+id/nav_foto"
+            android:icon="@drawable/icon_f"
+            android:title="Foto" />
+
+        <item
+            android:id="@+id/nav_factura"
+            android:icon="@drawable/icon_factura"
+            android:title="Factura" />
+
     </group>
 
 
