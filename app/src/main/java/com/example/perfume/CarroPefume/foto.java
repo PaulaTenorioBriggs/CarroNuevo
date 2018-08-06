@@ -23,12 +23,12 @@ public class foto extends Fragment {
     static final int REQUEST_IMAGE_CAPTURE=100;
     private Button btnTomarFoto;
 
-
+  
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        iV_imagen = (ImageView) findViewById(R.id.iV_imagen);
+        setContentView(R.layout.fragment_foto);
+        iV_imagen = (ImageView) iV_imagen.findViewById();
         btnTomarFoto = (Button) findViewById(R.id.btnTomaFoto);
 
         btnTomarFoto.setOnClickListener(new View.OnClickListener() {
@@ -97,11 +97,7 @@ public class foto extends Fragment {
     }
 
 
-
-
-
-
-
-
-
+    public void setContentView(int contentView) {
+        this.contentView = contentView;
+    }
 }
